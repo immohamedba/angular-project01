@@ -1,0 +1,31 @@
+<p>formulaire works!</p>
+<!--- 
+<div>
+    <input type=text #nom>
+</div>
+<div>
+    <button (click)="direBonjour(nom.value)">
+        Cliquer
+    </button>
+</div>
+<div>
+    Bonjour {{result}}
+</div>
+-->
+<form>
+    <div>Nom :<input type=text name=nom [(ngModel)]=personne.nom required ></div>
+    <div> Prenom : <input type=text name=prenom [(ngModel)]=personne.prenom required> </div>
+    <div>
+        <button type="submit"  [disabled]="!personne.nom || !personne.prenom "> Ajouter </button>
+        <!--- // *ngif ="personne.nom"
+        <button type="submit" [disabled]="!isvalid" (click)="ValidForm()" > Ajouter</button>
+        -->
+
+    </div>
+</form>
+<!--- 
+<div>
+    <input type=text [(ngModel)]=nom>
+    <div>Bonjour {{nom}}</div>
+</div>
+-->

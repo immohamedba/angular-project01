@@ -1,0 +1,24 @@
+<div style="text-align:center">
+  <h1>
+    Welcom to {{title }}!
+  </h1>
+  <ul>
+
+    <li> Nom : {{Personne.nom}}</li>
+  </ul>
+  <ul>
+    <li> {{tab[0]}}</li>
+    <li> {{tab[1]}}</li>
+    <li> {{tab[2]}}</li>
+    <li> {{tab[3]}}</li>
+  </ul>
+
+  <p>{{direBonjour()}}</p>
+
+  <p [textContent] =nom [ngStyle] ="{backgroundColor :'red'}"></p>
+  <p [ngClass]  ="{'rouge':true }" >{{nom}}</p>
+
+  <p [ngClass] ="{'rouge': nom =='Yessine'}">{{nom}}</p>
+  <app-menu></app-menu>
+  <router-outlet></router-outlet>
+</div>

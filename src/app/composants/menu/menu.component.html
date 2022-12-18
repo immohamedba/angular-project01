@@ -1,0 +1,14 @@
+<p>menu works!</p>
+
+
+<ul>
+    <li> <a routerLink =''> Acceuil </a></li>
+    <li> <a routerLink ="['/stagiaire', nom, prenom]"> Stagiaire </a></li>
+    <li>
+         <a [routerLink] ="['adresse']" [queryParams]  ="{ville :'Marseille', codePostal :'1300', rue :'paradis'}">
+         Adresse
+         </a>
+    </li>
+    <li> <a routerLink ="personne"> Personne </a></li>
+    <li> <a routerLink ="formulaire"> Formulaire </a></li>
+</ul>
